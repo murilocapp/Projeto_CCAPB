@@ -35,7 +35,7 @@ class Paciente:
         self.consultas = []
 
     def calcular_imc(self, peso: float, altura: float) -> float:
-        if altura <= 0:  
+        if altura <= 0:
             raise ValueError("Altura deve ser maior que zero para calcular o IMC.")
         return round(peso / (altura**2), 2)
 
@@ -140,6 +140,8 @@ class BancoDados:
         if not os.path.exists("data"):
             os.makedirs("data")
         self.caminho_arquivo = "data/" + self.nome + ".csv"
+        if os.path.exists(self.caminho_arquivo):
+          self.atualizar_banco()
 
     def adicionar_coluna(self, nome_coluna: str, valor_coluna: str):
         """
