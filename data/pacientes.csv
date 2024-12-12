@@ -1,1 +1,4 @@
 id,nome,cpf,data_nascimento,idade,sexo,peso,altura,imc,consultas
+P001,João Gomes,123.456.789-10,18/12/1950,"73 anos, 11 meses e 18 dias",M,80.5,1.822,24.25,[]
+P002,Joaquina Gomes,123.456.789-11,18/12/1970,"53 anos, 11 meses e 18 dias",F,54.0,1.6,21.09,[]
+P003,Bruna Alves,123.456.789-50,28/11/2004,"20 anos, 0 meses e 8 dias",F,74.0,1.52,32.03,[]
